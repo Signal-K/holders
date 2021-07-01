@@ -1,0 +1,234 @@
+/*! ------------------------------------------------
+   Project Name: Hintio Coming Soon & Landing Page Template
+   Project Description: Hintio - clean and bold coming soon & landing page template to kick-start your project
+   Tags: mix_design, hintio, coming soon, under construction, template, coming soon page, landing page, one page, html5, css3
+   Version: 1.0.0
+   Build Date: July 2020
+   Last Update: July 2020
+   This product is available exclusively on Themeforest
+   Author: mix_design
+   Author URI: http://mixdesign.club
+   File name: loader.css
+   ------------------------------------------------
+
+   ------------------------------------------------
+   Table of Contents
+   ------------------------------------------------
+    1. Loader Styles
+   ------------------------------------------------
+   Table of Contents End
+   ------------------------------------------------ */
+/* ------------------------------------------------*/
+/* Loader Styles Start */
+/* ------------------------------------------------*/
+.loader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: transparent;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+.loader.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader.is-animated .loader__container .loader-content,
+.loader.is-animated .loader__container .loader-caption {
+  -webkit-animation: 0.3s 1s ease-in-out 1 both fadeOut;
+     -moz-animation: 0.3s 1s ease-in-out 1 both fadeOut;
+          animation: 0.3s 1s ease-in-out 1 both fadeOut;
+}
+
+.loader__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #050505;
+}
+
+.loader__container .loader-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+     -moz-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.loader__container .loader-content .loader-text {
+  font: normal 700 3.4rem/.94 "Arial", sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+.loader__container .loader-content .loader-text span {
+  display: block;
+  white-space: nowrap;
+  -webkit-animation: 1s ease-in-out 0.1s infinite fadeIn;
+     -moz-animation: 1s ease-in-out 0.1s infinite fadeIn;
+          animation: 1s ease-in-out 0.1s infinite fadeIn;
+}
+
+.loader__container .loader-content .loader-text span.outline-white {
+  color: white;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.loader__container .loader-content .loader-text span.outline-colored {
+  color: #e51743;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #e51743;
+}
+
+.loader__container .loader-content .loader-text span:nth-of-type(2) {
+  -webkit-animation: 1s ease-in-out 0.2s infinite fadeIn;
+     -moz-animation: 1s ease-in-out 0.2s infinite fadeIn;
+          animation: 1s ease-in-out 0.2s infinite fadeIn;
+}
+
+.loader__container .loader-content .loader-text span:nth-of-type(3) {
+  -webkit-animation: 1s ease-in-out 0.3s infinite fadeIn;
+     -moz-animation: 1s ease-in-out 0.3s infinite fadeIn;
+          animation: 1s ease-in-out 0.3s infinite fadeIn;
+}
+
+.loader__container .loader-content .loader-text img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.loader__container .loader-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.loader__container .loader-caption p, .loader__container .loader-caption a {
+  font: normal 500 1.2rem/1.2 "Arial", sans-serif;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.loader__container .loader-caption a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (min-width: 768px) {
+  .loader__container .loader-content .loader-text {
+    font-size: 5rem;
+  }
+  .loader__container .loader-content .loader-text span.outline-white {
+    color: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+  }
+  .loader__container .loader-content .loader-text span.outline-colored {
+    color: #e51743;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #e51743;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .loader__container .loader-content .loader-text {
+    font-size: 6rem;
+  }
+  .loader__container .loader-content .loader-text span.outline-white {
+    color: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+  }
+  .loader__container .loader-content .loader-text span.outline-colored {
+    color: #e51743;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #e51743;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* ------------------------------------------------*/
+/* Loader Styles End */
+/* ------------------------------------------------*/
